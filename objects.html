@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <p id="due"></p>
+    <p id="dep"></p>
+    <script>
+// create an object
+        const person ={
+            name:"Charz ",
+            article: "is ", 
+            verb: "typing ",
+            noun:"words "
+        }; 
+        document.getElementById("due").innerHTML = person.name + person.article + person.verb + person.noun;
+        const van ={
+            article: "A ",
+            vehicle: "van ",
+            use: "is ",
+            verb: "coming to ",
+            location: "Kakuma"
+        };
+        document.getElementById("dep").innerHTML = van.article + van.vehicle + van.use + van.verb + van.location;
+    </script>
+</body>
+</html>

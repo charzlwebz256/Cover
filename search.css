@@ -1,0 +1,51 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+}
+.container{
+    width: 100%;
+    min-height: 100vh;
+    padding: 5%;
+    background-image: linear-gradient(rgba(0,8,51,0.9),rgba(0,8,51,0.9)), url(/pics/210614-CAEDSWEB-Images-MultiDomain_Space-Overview-reduced.jpeg);
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.search-bar{
+    width: 100%;
+    max-width: 700px;
+    display: flex;
+    align-items: center;
+    padding: 10px 20px;
+    background: rgba(255, 255,255,0.2);
+    border-radius: 60px;
+    backdrop-filter:blur(4px) saturate(180%);
+}
+.search-bar input{
+    background: transparent;
+    outline: none;
+    flex: 1;
+    padding: 24px 20px;
+    font-size: 30px;
+    color: #cac7ff;
+    border: 0;
+}
+::placeholder{
+    color: #cac7ff;
+}
+.search-bar button{
+    border: 0;
+    width: 60px;
+    background: #58529b;
+    cursor: pointer;
+    height: 60px;
+    border-radius: 50%;
+}
+.search-bar img{
+    width: 100%;
+    border-radius: 50px;
+}

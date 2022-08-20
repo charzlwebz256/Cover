@@ -1,0 +1,117 @@
+ *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+ }
+ body{
+    background: #f2f2f2;
+ }
+ nav{
+    background: #1b1b1b;
+ }
+ nav::after{
+     content: '';
+     clear: both;
+     display: table;
+ }
+ nav .logo{
+    float: left;
+    color: white;
+    font-size: 50px;
+    font-weight: 600;
+    line-height: 70px;
+    padding-left: 60px;
+
+ }
+ nav ul{
+    float: right;
+    list-style: none;
+    margin-right: 40px;
+    position: relative;
+ }
+ nav ul li{
+    float: left;
+    display: inline-block;
+    background: black;
+    margin: 0 5px;
+ }
+ nav ul li a{
+    color: white;
+    text-decoration: none;
+    line-height: 70px;
+    font-size: 18px;
+    padding: 8px 15px;
+ }
+ nav ul li a:hover{
+    box-shadow: 0 0 5px #33ffff,
+                0 0 5px #66ffff;
+                border-radius: 50px;
+                color: cyan;
+ }
+ nav ul ul{
+    position: absolute;
+    top: 90px;
+    opacity: 0;
+    visibility: hidden;
+    transition: top 1s;
+    border-top: 3px solid cyan;
+ }
+ nav ul ul ul{
+    border-top: none;
+ }
+ nav ul ul li a:hover{
+    box-shadow: none;
+    color: cyan;
+ }
+ nav ul li:hover  ul{
+    top:70px;
+    opacity: 1;
+    visibility: visible;
+ }
+ nav ul ul li{
+    position: relative;
+    margin: 0px;
+    width: 150px;
+    float: none;
+    display: list-item;
+    border-bottom: 1px solid rgba(0,0,0,0.3);
+ }
+ nav ul ul li a{
+    line-height: 50px;
+ }
+ .show, input{
+    display: none;
+ }
+ @media all and(max-width: 500px) {
+    nav ul{
+        margin-right: 0px;
+        float:left;
+    }
+    nav .logo{
+        padding-left: 30px;
+        width: 100%;
+    }
+    nav ul li, nav ul ul li{
+        display: block;
+        width: 100%;
+
+    }
+    nav ul ul{
+        top: 70px;
+        position: static;
+        border-top: none;
+        float: none;
+    }
+    .show{
+        display: block;
+        color: white;
+        font-size: 18px;
+        padding: 0 20px;
+        line-height: 70px;
+        cursor: pointer;
+    }
+    nav ul li a:hover{
+        color: cyan;
+    }
+ }
